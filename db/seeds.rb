@@ -8,5 +8,6 @@
 puts 'SETTING UP DEFAULT USER LOGIN'
 user = User.create! email: 'seed_user@example.com',
 	password: 'foobar',
-	password_confirmation: 'foobar'
+	password_confirmation: 'foobar',
+	confirmed_at: Time.now
 puts 'New user created: ' << user.email
