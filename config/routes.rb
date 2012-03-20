@@ -1,5 +1,7 @@
 Izebrg::Application.routes.draw do
   
+  match '/auth/:provider/callback', to: 'authentications#create'
+  resources :authentications
 
   root to: 'pages#home'
   match '/tou', to: 'pages#tou', as: 'tou'
@@ -7,7 +9,7 @@ Izebrg::Application.routes.draw do
   match '/about', to: 'pages#about', as: 'about'
   match '/contact', to: 'pages#contact', as: 'contact'
 
-  devise_for :users
+  devise_for :users, controllers: { registrations: 'registrations' }
   
     
 
