@@ -1,6 +1,11 @@
 Izebrg::Application.routes.draw do
   root to: 'pages#home'
   match '/tou', to: 'pages#tou', as: 'tou'
+  match '/help', to: 'pages#help', as: 'help'
+  match '/about', to: 'pages#about', as: 'about'
+  match '/contact', to: 'pages#contact', as: 'contact'
+  
+    
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

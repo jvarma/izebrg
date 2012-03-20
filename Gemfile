@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'devise', '>= 2.0.4'
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'bootstrap-sass', '~> 2.0.0'
 
 
 group :assets do
