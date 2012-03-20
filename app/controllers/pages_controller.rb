@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
-  	def home  	
+  	def home
+      @users = User.all  	
   	end
 
   	def tou

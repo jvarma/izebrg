@@ -3,6 +3,11 @@
 
   	<h2>There's more to it than meets the eye!</h2>
 
+  	
+  	<% @users.each do |user| %>
+  		<p><%= user.email %></p>
+  	<% end %>
+
   	<%= link_to "sign up now!", '#', class: "btn btn-large btn-primary" %>
 </div>
 
