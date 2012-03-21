@@ -32,7 +32,7 @@ textarea {
 	text-align: center;
 
 	h1 {
-		margin-bottom: 10px;	
+		margin-bottom: 5px;	
 	}
 }
 
@@ -87,7 +87,7 @@ footer {
 	margin-top: 45px;
 	padding-top: 5px;
 	border-top: 1px solid #eaeaea;
-	color: #999;
+	color: #555;
 
 	a {
 		color: #555;
@@ -122,3 +122,14 @@ footer {
   margin-top: 45px;
   @include box_sizing;
 }
+
+.well {
+	background-color: #E6E6B8;
+
+	label {
+		font-weight: bold;
+		display: block;
+	}
+
+}
+
