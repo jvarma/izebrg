@@ -1,13 +1,21 @@
-<div class="center hero-unit">
+<div class="center hero-unit span12">
 	<h1>izebrg</h1>
+	<h2>There's more to it than meets the eye!</h2>
 
-  	<h2>There's more to it than meets the eye!</h2>
+ 
 
-  	
-  	<% @users.each do |user| %>
-  		<p><%= user.email %></p>
-  	<% end %>
+	<div class="row">
+	<div class="span6">
+		<% @users.each do |user| %>
+  			<p><%= user.email %></p>
+  		<% end %>
+  	</div>
 
-  	<%= link_to "sign up now!", '#', class: "btn btn-large btn-primary" %>
+  	<div class="span6">
+  		<%= link_to "sign up now!", '#', class: "btn btn-large btn-primary" %>
+  	</div>
+  	</div>
+
+ 	
 </div>
 
